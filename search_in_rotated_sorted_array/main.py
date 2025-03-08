@@ -1,3 +1,13 @@
+'''
+A binary search solution with the fact that the input nums array
+is shifted in mind. The algorithm is a regular binary search, but
+it goes through an extra check to find which side is sorted to be
+able to check if its range covers the target. If it does, the
+algorithm goes towards it and if not, it goes to the other, non
+ordered side.
+'''
+
+
 class Solution(object):
     def search(self, nums, target):
         """
