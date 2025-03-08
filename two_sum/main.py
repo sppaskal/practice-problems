@@ -10,11 +10,14 @@ class Solution(object):
         compliments = {}
 
         for i, num in enumerate(nums):
+
+            # if num is a compliment to any previous num
+            # --> return both of their indices
             if num in compliments:
                 return [compliments[num], i]
 
-            # if compliment not found -->
-            # add compliment of cur num
+            # if cur num is not a compliment to a previous num
+            # --> add compliment of cur num to compliments dict
             compliment = target - num
             compliments[compliment] = i
 
