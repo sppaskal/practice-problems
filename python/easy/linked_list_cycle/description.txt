@@ -1,0 +1,8 @@
+✅ Problem 1: Detect a loop in a singly linked list
+Write a function that returns true if a cycle exists, otherwise false.
+
+Input:
+head = [3 -> 2 -> 0 -> -4]
+tail connects to node index 1
+
+Expected Output:true
