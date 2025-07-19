@@ -1,3 +1,11 @@
+'''
+To find three integers in an array nums of length n whose sum is closest to a given target,
+we can use a combination of sorting and a two-pointer technique to efficiently explore all
+possible triplets. The goal is to return the sum of the three integers that is closest to the
+target, assuming there is exactly one solution.
+'''
+
+
 def threeSumClosest(self, nums, target):
     """
     :type nums: List[int]
