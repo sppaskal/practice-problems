@@ -1,0 +1,7 @@
+Write a Python function flatten_list that flattens a nested list of arbitrary depth.
+
+
+Example:
+
+flatten_list([1, [2, [3, 4], 5], 6])
+# Output: [1, 2, 3, 4, 5, 6]
