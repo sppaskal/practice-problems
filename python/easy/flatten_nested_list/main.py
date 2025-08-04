@@ -1,6 +1,6 @@
 '''
 Use a recursive approach to traverse
-all the nested lists within the main 
+all the nested lists within the main
 list. Use .extend() to add all elems
 of each item (when it's an iterable)
 to the flat list, or simply append when
