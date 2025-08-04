@@ -21,3 +21,29 @@ def flatten_nested_list(nested_list):
 
 
 print(flatten_nested_list([1, [2, [3, 4], 5], 6]))
+
+
+'''
+A non recursive version to use
+if the depth of the nested lists
+is absurdly high. Recursive depth in
+Python is limited to 1000, and approaching
+this can be inneficient, so a non
+recursive solution may be necessary at
+times.
+'''
+
+
+def flatten_nested_list(nested_list):
+    result = []
+    stack = [nested_list]
+    while stack:
+        current = stack.pop()
+        if isinstance(current, list):
+            stack.extend(reversed(current))
+        else:
+            result.append(current)
+    return result
+
+
+print(flatten_nested_list([1, [2, [3, 4], 5], 6]))
