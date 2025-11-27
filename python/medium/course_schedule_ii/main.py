@@ -3,12 +3,12 @@ from collections import defaultdict, deque
 
 def findOrder(numCourses, prerequisites):
     # Step 1: Build the graph and count prerequisites for each course
-    graph = defaultdict(list)         # graph[b] = list of courses that depend on b
-    prereq_count = [0] * numCourses   # prereq_count[a] = number of courses that must be done before a
+    graph = defaultdict(list)           # graph[b] = list of courses that depend on b
+    prereq_count = [0] * numCourses     # number of courses that must be done before a
 
     for a, b in prerequisites:
-        graph[b].append(a)            # b → a means: once b is done, a can be unlocked
-        prereq_count[a] += 1          # a has one more prerequisite
+        graph[b].append(a)              # b → a means: once b is done, a can be unlocked
+        prereq_count[a] += 1            # a has one more prerequisite
 
     # Step 2: Initialize queue with courses that have no prerequisites
     queue = deque([i for i in range(numCourses) if prereq_count[i] == 0])
