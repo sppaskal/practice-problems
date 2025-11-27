@@ -1,0 +1,14 @@
+Combine overlapping intervals into a minimal set of non-overlapping ones.
+
+🔍 Problem Summary
+You're given a list of intervals like:
+
+Code
+[[1,3], [2,6], [8,10], [15,18]]
+Your task is to merge overlapping intervals. In this case:
+
+[1,3] and [2,6] overlap → merge into [1,6]
+
+Others don’t overlap
+
+Output: [[1,6], [8,10], [15,18]]
