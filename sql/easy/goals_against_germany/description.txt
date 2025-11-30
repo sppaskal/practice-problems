@@ -1,4 +1,4 @@
-Show the player, teamid, stadium and mdate for every German goal.
+Show the name of all players who scored a goal against Germany
 
 ========================
         GAME
